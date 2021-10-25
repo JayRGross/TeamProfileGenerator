@@ -1,0 +1,14 @@
+.navbar{
+    background-color: blue;
+    font-family: sans-serif ;
+    font-size: large;
+    font-weight: bold;
+}
+
+.card-header{
+    background-color: coral;
+}
+
+.card-body{
+    background-color: lightgrey;
+}

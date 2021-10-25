@@ -1,13 +1,13 @@
-const manager = require('./lib/manager');
-const engineer = require('./lib/engineer');
-const intern = require('./lib/intern');
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
 
 const HTMLtemplate = require('./src/HTMLtemplate');
 
-const inquirer = require('inquierer');
-const inquirer = require('fs');
+const inquirer = require('inquirer');
+const fs = require('fs');
 
-const fullteam ={};
+const fullTeam = [];
 
 const managerPrompt = () => {
     return inquirer.prompt([
@@ -34,8 +34,8 @@ const managerPrompt = () => {
     ])
     .then(managerPrompt => {
       const { name, id, email, officeNumber } = managerPrompt;
-      const manager = new Manager(name, id, email, officeNumber);
-      fullteam.push(manager)
+      let manager = new Manager(name, id, email, officeNumber);
+      fullTeam.push(manager)
       console.log(manager)  
     })
 };
@@ -90,7 +90,7 @@ const newEmployee = () => {
         } else if (role === 'Intern') {
             employee = new Intern(name, id, email, school);
         }
-        fullteam.push(employee);
+        fullTeam.push(employee);
 
         if(confirmnewEmployee) {
             return newEmployee(fullTeam);
