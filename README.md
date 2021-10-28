@@ -1,6 +1,6 @@
 
 # Title
-Team Profile Generator
+Team Profile Generator - https://youtu.be/L8SlMHVYVmQ
 ## Description
 A Node.js command line applications that is built to take employee information and generate a HTML website that displays the employee information.
 ## Installation
