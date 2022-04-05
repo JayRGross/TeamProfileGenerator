@@ -1,6 +1,8 @@
 
 # Title
 Team Profile Generator - https://youtu.be/L8SlMHVYVmQ
+![Team Profile - Google Chrome 10_25_2021 12_54_25 AM (2)](https://user-images.githubusercontent.com/85857472/139179556-27bb557e-6b99-4157-a88b-2fd69e1d7cb7.png)
+
 ## Description
 A Node.js command line applications that is built to take employee information and generate a HTML website that displays the employee information.
 ## Installation
